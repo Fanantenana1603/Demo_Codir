@@ -23,20 +23,20 @@ ${fermer modale}    //*[@id="modal-article"]/ngb-modal-window/div/div/app-detail
 
 #Modifier catégorie
 ${modifier categorie}    //*[@id="accordionSubList2"]/div[2]/div[28]/div[1]/div[1]/div/div/div[2]/span
-${valider modification}    body.modal-open:nth-child(2) div.section-block.custom-scrollbar div.inner-section ngb-modal-window.d-block.fade.modal.modal-detailArticle.modal-modif-categorie.modal-modification.show div.modal-dialog.modal-dialog-scrollable.modal-xl div.modal-content app-ajout-category.component-host-scrollable div.modal-content div.modal-footer > button.btn.btn-red.btn-valider:nth-child(2)
+${valider}    xpath=//button[contains(text(),'Valider')]
 
 #Supprimer catégorie
 ${Supprimer categorie}    //*[@id="accordionSubList2"]/div[2]/div[28]/div[1]/div[1]/div/div/div[3]/span
 ${confirmer suppression}    //*[@id="modal-article"]/ngb-modal-window/div/div/app-confirmation-suppression/div/div[3]/button[2]
 
 *** Keywords ***
-Ajout categorie [integrationCategoriewithRobot]   
+Ajout categorie [Categorie__test__01]   
     [Arguments]    ${btn ajout categorie}    ${designation categorie}    ${code categorie}    ${order categorie}    ${ajout regroupement input}    ${ajout regroupement azerty}    ${bouton valider categorie}
     Set Selenium Speed    0.5s    
-    Page Should Not Contain    integrationCategoriewithRobot
+    Page Should Not Contain    Categorie__test__01
     Capture Page Screenshot
     Click element    ${btn ajout categorie}
-    Input Text    ${designation categorie}    integrationCategoriewithRobot
+    Input Text    ${designation categorie}    Categorie__test__01
     Input Text    ${code categorie}    TG
     Input Text     ${order categorie}    1
     Click element     ${ajout regroupement input}
@@ -46,7 +46,7 @@ Ajout categorie [integrationCategoriewithRobot]
     Sleep    3s
     Capture Page Screenshot
 
-Voir Détails catégorie [integrationCategoriewithRobot]
+Voir Détails catégorie [Categorie__test__01]
     [Arguments]    ${icone action}    ${Voir detail}     ${fermer modale}
     Set Selenium Speed    0.5s
     Click element    ${icone action} 
@@ -54,16 +54,16 @@ Voir Détails catégorie [integrationCategoriewithRobot]
     Click element    ${fermer modale}
 
 
-Mofication categorie [Categorie edited]
-    [Arguments]    ${designation categorie}    ${code categorie}    ${modifier categorie}    ${valider modification}
+Mofication categorie [Categorie__test__01__edited]
+    [Arguments]    ${designation categorie}    ${code categorie}    ${modifier categorie}    ${valider}
     Set Selenium Speed    0.5s
     Click element    ${modifier categorie} 
-    Input Text    ${designation categorie}    Categorie edited
+    Input Text    ${designation categorie}    Categorie__test__01__edited
     Input Text    ${code categorie}    55
     Sleep    2s
-    Click element     ${valider modification}
+    Click element     ${valider}
 
-Suppression categorie [Categorie edited]
+Suppression categorie [Categorie__test__01]
     [Arguments]    ${icone action}    ${Supprimer categorie}    ${confirmer suppression}
     Sleep    3s
     Click element    ${icone action}

@@ -34,11 +34,13 @@ Gestion Des Articles [Regroupement]
     Voir détails Modifié Regroupement [Regroupement__Test__01__edited]   ${Voir Details}    ${fermeture modale détails}
     Suppression du regroupement [Regroupement__Test__01__edited]   
 
-# Gestion Des Articles [Categorie]
-#     Ajout categorie [integrationCategoriewithRobot]    ${btn ajout categorie}    ${designation categorie}    ${code categorie}    ${order categorie}    ${ajout regroupement input}    ${ajout regroupement azerty}    ${bouton valider categorie}
-#     Voir Détails catégorie [integrationCategoriewithRobot]    ${icone action}    ${Voir detail}     ${fermer modale}
-#     Mofication categorie [Categorie edited]    ${designation categorie}    ${code categorie}    ${modifier categorie}    ${valider modification}
-#     Suppression categorie [Categorie edited]    ${icone action}    ${Supprimer categorie}    ${confirmer suppression}
+Gestion Des Articles [Categorie]
+    Ajout categorie [Categorie__test__01]       ${btn ajout categorie}    ${designation categorie}    ${code categorie}    ${order categorie}    ${ajout regroupement input}    ${ajout regroupement azerty}    ${bouton valider categorie}
+    Voir Détails catégorie [Categorie__test__01]    ${icone action}    ${Voir detail}     ${fermer modale}
+    Mofication categorie [Categorie__test__01__edited]    ${designation categorie}    ${code categorie}    ${modifier categorie}    ${valider}
+    Suppression categorie [Categorie__test__01]   ${icone action}    ${Supprimer categorie}    ${confirmer suppression}
+
+
 # Gestion pack
 #     Ajout article dans un pack existant        #${article 01}    ${article 02}    ${article 03}    ${article 04} 
     
