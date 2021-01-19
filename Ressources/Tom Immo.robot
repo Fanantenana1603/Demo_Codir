@@ -40,9 +40,11 @@ Gestion Des Articles [Categorie]
     Mofication categorie [Categorie__test__01__edited]    ${designation categorie}    ${code categorie}    ${modifier categorie}    ${valider}
     Suppression categorie [Categorie__test__01]   ${icone action}    ${Supprimer categorie}    ${confirmer suppression}
 
-
-# Gestion pack
-#     Ajout article dans un pack existant        #${article 01}    ${article 02}    ${article 03}    ${article 04} 
+Gestion Des Articles [Famille]
+    Ajout Famille [Famille_test__01]
+    Voir Détails Famille [Famille_test__01]    ${action famille}    ${Voir détails famille}    ${Fermer Détails modale famile}
+    Modifier Famille [Famille_test__01]     ${Modifier famille}     ${Désignation famille}    ${Code Famille}    ${ordre affichage famile}    ${valider modification famille}
+    Suppression famille [Famille_test__01__edited]    ${Supprimer famille}    ${confirmation de suppression famille}
     
 Deconnexion_Admin
     Go to    https://recette.makeitpulse.com/tom-immo/articles/list
