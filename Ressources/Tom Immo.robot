@@ -26,20 +26,21 @@ Gestion des utilisateurs
     User in active Storage      ${zone de recherche}    ${Nom utilisateur}    ${matricule}
     User not in active Storage        ${zone de recherche}
 
-# Gestion Des Articles [Regroupement]
-#     Ajout Regroupement [integrationRegroupementwithRobot]    ${ajout regroupement}    ${Ajout Reg designation}     ${Ajout Reg Code}    ${Ajout Reg ordre}    ${Ajout Reg verificateur}    ${franklin}    ${Ajout Verfi}    ${btn Validation reg}    
-#     Voir détails Regroupement [integrationRegroupementwithRobot]    ${Voir Details}    ${fermeture modale détails}
-#     Modification Regroupement [integrationRegroupementwithRobot]    ${Modification}    ${Ajout Reg designation}    ${Ajout Reg Code}
-#     Voir détails Modifié Regroupement [regroupementEdited]    ${Voir Details}    ${fermeture modale détails}
-#     Suppression du regroupement [integrationRegroupementwithRobot]   
+Gestion Des Articles [Regroupement]
+    Sleep    5s
+    Ajout Regroupement [Regroupement__Test__01]     ${ajout regroupement}    ${Ajout Reg designation}     ${Ajout Reg Code}    ${Ajout Reg ordre}    ${Ajout Reg verificateur}    ${franklin}    ${Ajout Verfi}    ${btn Validation reg}    
+    Voir détails Regroupement [Regroupement__Test__01]   ${Voir Details}    ${fermeture modale détails}
+    Modification Regroupement [Regroupement__Test__01__edited]    ${Modification}    ${Ajout Reg designation}    ${Ajout Reg Code}
+    Voir détails Modifié Regroupement [Regroupement__Test__01__edited]   ${Voir Details}    ${fermeture modale détails}
+    Suppression du regroupement [Regroupement__Test__01__edited]   
 
 # Gestion Des Articles [Categorie]
 #     Ajout categorie [integrationCategoriewithRobot]    ${btn ajout categorie}    ${designation categorie}    ${code categorie}    ${order categorie}    ${ajout regroupement input}    ${ajout regroupement azerty}    ${bouton valider categorie}
 #     Voir Détails catégorie [integrationCategoriewithRobot]    ${icone action}    ${Voir detail}     ${fermer modale}
 #     Mofication categorie [Categorie edited]    ${designation categorie}    ${code categorie}    ${modifier categorie}    ${valider modification}
 #     Suppression categorie [Categorie edited]    ${icone action}    ${Supprimer categorie}    ${confirmer suppression}
-Gestion pack
-    Ajout article dans un pack existant        #${article 01}    ${article 02}    ${article 03}    ${article 04} 
+# Gestion pack
+#     Ajout article dans un pack existant        #${article 01}    ${article 02}    ${article 03}    ${article 04} 
     
 Deconnexion_Admin
     Go to    https://recette.makeitpulse.com/tom-immo/articles/list

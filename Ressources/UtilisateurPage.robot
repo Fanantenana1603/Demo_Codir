@@ -10,6 +10,7 @@ User in active Storage
     Go to    ${utilisateur_url} 
     Click element    xpath:/html/body/app-root/app-liste-user/div[1]/div/div[2]/div/div[1]/div[2]/div[1]/button
     Input Text    ${zone de recherche}    Fanantenana
+    Click element    xpath:/html/body/app-root/app-ajout-recherche/div[1]/div[2]/div/div/form/div[3]/button
     Page Should Contain    ${Nom utilisateur}
     Page Should Contain    ${matricule}
     Capture Page Screenshot
