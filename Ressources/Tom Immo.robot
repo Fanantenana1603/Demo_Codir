@@ -47,7 +47,8 @@ Gestion Des Articles [Famille]
     Suppression famille [Famille_test__01__edited]    ${Supprimer famille}    ${confirmation de suppression famille}
 
 Gestion Des Packs
-    Création d'un nouveau Pack [Robot__Pack__Test]    ${bouton toggle}    ${btn nouveau Pack}    ${nom Pack}    ${Valider ajout}
+    Création d'un nouveau Pack [Robot__Pack__Test]    ${Name}     ${bouton toggle}    ${btn nouveau Pack}    ${nom Pack}    ${Valider ajout}
+    Ajouter des Articles dans Pack     ${bouton toggle}
 
 Deconnexion_Admin
     Go to    https://recette.makeitpulse.com/tom-immo/articles/list

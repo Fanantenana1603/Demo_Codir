@@ -20,3 +20,16 @@ Création d'un nouveau Pack [Robot__Pack__Test]
     Input Text    //input[@name="nom-pack-article"]    ${Name}
     Click Element    //button[@class="btn btn-red btn-valider"]
     Capture Page Screenshot
+
+Ajouter des Articles dans Pack 
+    [Arguments]    ${bouton toggle}
+    Click element    ${bouton toggle}
+    Sleep    3s 
+    Click Element    //input[@class="checkbox-table ng-untouched ng-pristine ng-valid"]
+    Click Element    //input[@class="checkbox-table ng-untouched ng-pristine ng-valid"]
+    Click Element    //input[@class="checkbox-table ng-untouched ng-pristine ng-valid"]
+    Click Element    //input[@class="checkbox-table ng-untouched ng-pristine ng-valid"]
+    Click Element    //path[@id="catalogue"]
+    Click Link    //a[@id="dropdown-packExistant"]
+    Click Link    xpath=(//a[@class="dropdown-item"])[26]
+    Click Element    //button[@class="btn btn-red btn-ajouter"]
