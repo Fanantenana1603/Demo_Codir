@@ -26,8 +26,6 @@ login_cas_non_passant[Mail rempli et mot de passe vide]
     Click element    id:password    
     Click element    xpath://*[@id="formContent"]/div/form/div[4]/button
     Page Should Contain    Veuillez remplir ce champ
-
-
     Capture Page Screenshot
 
 login_cas_non_passant[Mail vide et mot de passe rempli]
@@ -38,8 +36,6 @@ login_cas_non_passant[Mail vide et mot de passe rempli]
     Input Text    id:password      azerty  
     Click element    xpath://*[@id="formContent"]/div/form/div[4]/button
     Page Should Contain    Veuillez remplir ce champ
-
-
     Capture Page Screenshot
 
 login_cas_non_passant[Utilisateur qui n'est pas enregistré dans la base] 

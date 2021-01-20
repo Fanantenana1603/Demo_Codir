@@ -9,6 +9,7 @@ Resource        ../Ressources/GA_regroupement.robot
 Resource        ../Ressources/GA_categorie.robot
 Resource        ../Ressources/GA_famille.robot
 Resource        ../Ressources/AddArticleInPack.robot
+Resource        ../Ressources/GA_article_Pack.robot
 
 *** Test Cases ***
 Authentification
@@ -19,7 +20,6 @@ Authentification
     login_cas_non_passant[Mail vide et mot de passe rempli]
     login_cas_non_passant[Utilisateur qui n'est pas enregistré dans la base]     ${login KO}
     login_cas_passé     ${admin}
-
 
 Gestion des utilisateurs
     Set Selenium Speed    0.5s
@@ -45,7 +45,10 @@ Gestion Des Articles [Famille]
     Voir Détails Famille [Famille_test__01]    ${action famille}    ${Voir détails famille}    ${Fermer Détails modale famile}
     Modifier Famille [Famille_test__01]     ${Modifier famille}     ${Désignation famille}    ${Code Famille}    ${ordre affichage famile}    ${valider modification famille}
     Suppression famille [Famille_test__01__edited]    ${Supprimer famille}    ${confirmation de suppression famille}
-    
+
+Gestion Des Packs
+    Création d'un nouveau Pack [Robot__Pack__Test]    ${bouton toggle}    ${btn nouveau Pack}    ${nom Pack}    ${Valider ajout}
+
 Deconnexion_Admin
     Go to    https://recette.makeitpulse.com/tom-immo/articles/list
     Click Element  xpath=.//*[@class='tool-link tool-user']
