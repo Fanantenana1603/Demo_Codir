@@ -10,6 +10,7 @@ Resource        ../Ressources/GA_categorie.robot
 Resource        ../Ressources/GA_famille.robot
 Resource        ../Ressources/AddArticleInPack.robot
 Resource        ../Ressources/GA_article_Pack.robot
+# Resource        ../Ressources/GA_sousFamille.robot
 
 *** Test Cases ***
 Authentification
@@ -46,6 +47,11 @@ Gestion Des Articles [Famille]
     Modifier Famille [Famille_test__01]     ${Modifier famille}     ${Désignation famille}    ${Code Famille}    ${ordre affichage famile}    ${valider modification famille}
     Suppression famille [Famille_test__01__edited]    ${Supprimer famille}    ${confirmation de suppression famille}
 
+# Gestion Des Articles [Sous Famille]
+#     Ajout d'une nouvelle Sous-Famille [Robot__test__SousFamille]
+#     Modification d'une Sous-Famille [Robot__test__SousFamille]
+#     Suppression d'une Sous-Famille
+
 Gestion Des Packs
     Création d'un nouveau Pack [Robot__Pack__Test]    ${Name}     ${bouton toggle}    ${btn nouveau Pack}    ${nom Pack}    ${Valider ajout}
     Ajouter des Articles dans Pack
@@ -53,7 +59,6 @@ Gestion Des Packs
     Modifier Pack
     Supprimer article dans Pack
     Supprimer Pack
-
 
 Deconnexion_Admin
     Go to    https://recette.makeitpulse.com/tom-immo/articles/list

@@ -5,14 +5,11 @@ Library     SeleniumLibrary
 ${action famille}    //*[@id="accordionSubList3"]/div[2]/div[76]/div[1]/div[1]/div/button
 ${Voir détails famille}    //*[@id="accordionSubList3"]/div[2]/div[76]/div[1]/div[1]/div/div/div[1]
 ${Fermer Détails modale famile}    //*[@id="modal-article"]/ngb-modal-window/div/div/app-detail-sous-famille/div/div[3]/button
-
-
 ${Modifier famille}    //*[@id="accordionSubList3"]/div[2]/div[76]/div[1]/div[1]/div/div/div[2]/span
 ${Désignation famille}    //*[@id="designation-art"]
 ${Code Famille}    //*[@id="modal-article"]/ngb-modal-window/div/div/app-ajout-famille/div/div[2]/div/div[1]/div/div[2]/input
 ${ordre affichage famile}    //*[@id="modal-article"]/ngb-modal-window/div/div/app-ajout-famille/div/div[2]/div/div[1]/div/div[3]/input
 ${valider modification famille}    //*[@id="modal-article"]/ngb-modal-window/div/div/app-ajout-famille/div/div[3]/button[2]
-
 ${Supprimer famille}    //*[@id="accordionSubList3"]/div[2]/div[76]/div[1]/div[1]/div/div/div[3]/span
 ${confirmation de suppression famille}    //*[@id="modal-article"]/ngb-modal-window/div/div/app-confirmation-suppression/div/div[3]/button[2]
 *** Keywords ***
