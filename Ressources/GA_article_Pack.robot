@@ -22,14 +22,40 @@ Création d'un nouveau Pack [Robot__Pack__Test]
     Capture Page Screenshot
 
 Ajouter des Articles dans Pack 
-    [Arguments]    ${bouton toggle}
-    Click element    ${bouton toggle}
-    Sleep    3s 
+    # [Arguments]    ${bouton toggle}
+    Sleep    5s 
+    Go to     https://recette.makeitpulse.com/tom-immo/articles/list
+    Sleep    20s 
     Click Element    //input[@class="checkbox-table ng-untouched ng-pristine ng-valid"]
     Click Element    //input[@class="checkbox-table ng-untouched ng-pristine ng-valid"]
     Click Element    //input[@class="checkbox-table ng-untouched ng-pristine ng-valid"]
     Click Element    //input[@class="checkbox-table ng-untouched ng-pristine ng-valid"]
-    Click Element    //path[@id="catalogue"]
+    Click Element    //*[@id="header5ItemList"]/div[1]/div[2]/button[1]
     Click Link    //a[@id="dropdown-packExistant"]
     Click Link    xpath=(//a[@class="dropdown-item"])[26]
     Click Element    //button[@class="btn btn-red btn-ajouter"]
+
+Voir Détails Pack
+    [Arguments]    ${bouton toggle}
+    Sleep    2s
+    Click element    ${bouton toggle}
+    Sleep    2s
+    Click Element    xpath=(//ul[@class="list-unstyled list-infos"])[5]
+
+Modifier Pack
+    Sleep    3s   
+    Click Element    //i[@class="icon-pencil"]
+    Input Text    //input[@name="nom-pack-article"]    Robot__Pack__test__edited
+    Click Element    //button[@class="btn btn-red btn-valider"]
+
+Supprimer article dans Pack
+    Sleep    5s
+    Click Element    xpath=(//i[@class="icon-delete"])[4]
+    Click Element    //button[@class="btn btn-red btn-supprimer"]
+    Click Element    xpath=(//i[@class="icon-delete"])[3]
+    Click Element    //button[@class="btn btn-red btn-supprimer"]
+
+Supprimer Pack
+    Sleep     3s
+    Click Element    //i[@class="icon-delete"]
+    Click Element    //button[@class="btn btn-red btn-supprimer"]

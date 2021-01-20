@@ -48,7 +48,12 @@ Gestion Des Articles [Famille]
 
 Gestion Des Packs
     Création d'un nouveau Pack [Robot__Pack__Test]    ${Name}     ${bouton toggle}    ${btn nouveau Pack}    ${nom Pack}    ${Valider ajout}
-    Ajouter des Articles dans Pack     ${bouton toggle}
+    Ajouter des Articles dans Pack
+    Voir Détails Pack    ${bouton toggle}
+    Modifier Pack
+    Supprimer article dans Pack
+    Supprimer Pack
+
 
 Deconnexion_Admin
     Go to    https://recette.makeitpulse.com/tom-immo/articles/list
