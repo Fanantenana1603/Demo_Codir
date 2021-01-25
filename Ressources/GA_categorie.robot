@@ -15,7 +15,7 @@ ${Action modifier categorie}    //*[@id="accordionSubList2"]/div[2]/div[27]/div[
 ${Input modification code categorie}    //*[@id="modal-article"]/ngb-modal-window/div/div/app-ajout-category/div/div[2]/div/div[1]/div/div[2]/input
 ${Action Suppression categorie}    //*[@id="accordionSubList2"]/div[2]/div[27]/div[1]/div[1]/div/div/div[3]
 ${btn confirmation de suppression categorie}    //*[@id="modal-article"]/ngb-modal-window/div/div/app-confirmation-suppression/div/div[3]/button[2]
-
+${Categorie__test__01}    //*[@id="accordionSubList2"]/div[2]/div[28]
 #Voir détail d'une catégorie
 ${icone action}    //*[@id="accordionSubList2"]/div[2]/div[28]/div[1]/div[1]/div/button
 ${Voir detail}    //*[@id="accordionSubList2"]/div[2]/div[28]/div[1]/div[1]/div/div/div[1]/span
@@ -49,6 +49,7 @@ Ajout categorie [Categorie__test__01]
 Voir Détails catégorie [Categorie__test__01]
     [Arguments]    ${icone action}    ${Voir detail}     ${fermer modale}
     Set Selenium Speed    0.5s
+    Scroll Element Into View    ${Categorie__test__01} 
     Click element    ${icone action} 
     Click element    ${Voir detail}
     Click element    ${fermer modale}

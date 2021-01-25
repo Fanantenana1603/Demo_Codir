@@ -12,14 +12,17 @@ ${ordre affichage famile}    //*[@id="modal-article"]/ngb-modal-window/div/div/a
 ${valider modification famille}    //*[@id="modal-article"]/ngb-modal-window/div/div/app-ajout-famille/div/div[3]/button[2]
 ${Supprimer famille}    //*[@id="accordionSubList3"]/div[2]/div[76]/div[1]/div[1]/div/div/div[3]/span
 ${confirmation de suppression famille}    //*[@id="modal-article"]/ngb-modal-window/div/div/app-confirmation-suppression/div/div[3]/button[2]
+
 *** Keywords ***
 Ajout Famille [Famille_test__01]
+    [Arguments]    ${Désignation famille}
     Page Should Not Contain    Famille_test__01
-    Sleep    5s 
+    Wait Until Element Is Enabled    xpath=(.//*[@class='btn btn-red'])[3]     timeout=30s
     Capture Page Screenshot
     Set Selenium Speed    1s 
+    Sleep     5s
     Click Element  xpath=(.//*[@class='btn btn-red'])[3]
-    Input Text  xpath=(.//*[@type='text'])[2]  Famille_test__01
+    Input Text      ${Désignation famille}      Famille_test__01
     Input Text  xpath=(.//*[@type='text'])[3]  XX
     Click Element  xpath=(//a[contains(text(),'Sélectionner')])[1]
     Click Element  xpath=//a[contains(text(),'azerty')]

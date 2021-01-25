@@ -42,7 +42,7 @@ Gestion Des Articles [Categorie]
     Suppression categorie [Categorie__test__01]   ${icone action}    ${Supprimer categorie}    ${confirmer suppression}
 
 Gestion Des Articles [Famille]
-    Ajout Famille [Famille_test__01]
+    Ajout Famille [Famille_test__01]    ${Désignation famille}
     Voir Détails Famille [Famille_test__01]    ${action famille}    ${Voir détails famille}    ${Fermer Détails modale famile}
     Modifier Famille [Famille_test__01]     ${Modifier famille}     ${Désignation famille}    ${Code Famille}    ${ordre affichage famile}    ${valider modification famille}
     Suppression famille [Famille_test__01__edited]    ${Supprimer famille}    ${confirmation de suppression famille}
