@@ -56,6 +56,7 @@ Gestion Des Packs
 
 
 Deconnexion_Admin
+    Sleep     3s
     Go to    https://recette.makeitpulse.com/tom-immo/articles/list
     Click Element  xpath=.//*[@class='tool-link tool-user']
     Click Element  xpath=.//*[@class='text-logout']

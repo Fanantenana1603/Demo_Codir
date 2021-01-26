@@ -22,6 +22,7 @@ Ajout Famille [Famille_test__01]
     Capture Page Screenshot
     Set Selenium Speed    1s 
     Click Element  xpath=(.//*[@class='btn btn-red'])[3]
+    wait Until element is Enabled    xpath=(.//*[@type='text'])[2]    timeout=20s
     Input Text  xpath=(.//*[@type='text'])[2]  Famille_test__01
     Input Text  xpath=(.//*[@type='text'])[3]  XX
     Click Element  xpath=(//a[contains(text(),'Sélectionner')])[1]

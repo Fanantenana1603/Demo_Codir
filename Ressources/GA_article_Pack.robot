@@ -25,7 +25,7 @@ Ajouter des Articles dans Pack
     # [Arguments]    ${bouton toggle}
     Sleep    5s 
     Go to     https://recette.makeitpulse.com/tom-immo/articles/list
-    Sleep    20s 
+    wait Until element is Enabled    //input[@class="checkbox-table ng-untouched ng-pristine ng-valid"]    timeout=30s
     Click Element    //input[@class="checkbox-table ng-untouched ng-pristine ng-valid"]
     Click Element    //input[@class="checkbox-table ng-untouched ng-pristine ng-valid"]
     Click Element    //input[@class="checkbox-table ng-untouched ng-pristine ng-valid"]
@@ -50,8 +50,10 @@ Modifier Pack
 
 Supprimer article dans Pack
     Sleep    5s
+    set Selenium Speed    1s
     Click Element    xpath=(//i[@class="icon-delete"])[4]
     Click Element    //button[@class="btn btn-red btn-supprimer"]
+    Sleep     2s
     Click Element    xpath=(//i[@class="icon-delete"])[3]
     Click Element    //button[@class="btn btn-red btn-supprimer"]
 
