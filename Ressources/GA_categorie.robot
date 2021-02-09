@@ -37,7 +37,7 @@ Ajout categorie [Categorie__test__01]
     Capture Page Screenshot
     sleep     5s
     Click element    ${btn ajout categorie}
-    Wait Until Element Is Enabled        ${designation categorie}    timeout=10s
+    Wait Until Element Is Enabled        ${designation categorie}    timeout=30s
     Input Text    ${designation categorie}    Categorie__test__01
     Input Text    ${code categorie}    TG
     Input Text     ${order categorie}    1
@@ -60,7 +60,7 @@ Mofication categorie [Categorie__test__01__edited]
     [Arguments]    ${designation categorie}    ${code categorie}    ${modifier categorie}    ${valider}
     Set Selenium Speed    0.5s
     Click element    ${modifier categorie} 
-    Wait Until Element Is Enabled        ${designation categorie}    timeout=10s
+    Wait Until Element Is Enabled        ${designation categorie}    timeout=30s
     Input Text    ${designation categorie}    Categorie__test__01__edited
     Input Text    ${code categorie}    55
     Sleep    2s

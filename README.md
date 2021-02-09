@@ -5,7 +5,7 @@ Robot framework est un Framework de test d'acceptance en python.
 
 Avantage?
     C'est comme si vous executer votre Cas de test en Squash directement :D et cela avec le rapport de test.
-    C'est cool non
+    C'est cool non?
 
 # Sommaire
 Installation:
@@ -31,9 +31,9 @@ IDE
 
 Test à executer
     -Authentification Admin
-    _Gestion des utilisateurs
+    -Gestion des utilisateurs [Utilisateur existant en base et qui n'est pas en base]
     -Gestion des Articles [regroupement, Catégorie et famille]
-    -Gestion des packs
+    -Gestion des packs [Ajout Pack, Ajout Article dans Pack, modification pack, Suppression article dans pack et Suppression du Pack]
     -Déconnexion
 
 

@@ -44,20 +44,19 @@ Voir Détails Pack
 
 Modifier Pack
     Sleep    3s   
+    set Selenium Speed    0.5s
     Click Element    //i[@class="icon-pencil"]
     Input Text    //input[@name="nom-pack-article"]    Robot__Pack__test__edited
     Click Element    //button[@class="btn btn-red btn-valider"]
 
 Supprimer article dans Pack
     Sleep    5s
-    set Selenium Speed    1s
-    Click Element    xpath=(//i[@class="icon-delete"])[4]
-    Click Element    //button[@class="btn btn-red btn-supprimer"]
-    Sleep     2s
-    Click Element    xpath=(//i[@class="icon-delete"])[3]
-    Click Element    //button[@class="btn btn-red btn-supprimer"]
+    # set Selenium Speed    0.5s
+    Click Element  xpath=(.//*[@class='icon-delete'])[3]
+    Click Element  xpath=(.//*[@class='icon-delete'])[3]
 
 Supprimer Pack
     Sleep     3s
-    Click Element    //i[@class="icon-delete"]
-    Click Element    //button[@class="btn btn-red btn-supprimer"]
+    # set selenium Speed    0.5s
+    Click Element  xpath=(.//*[@class='icon-delete'])[1]
+    click element    xpath=//*[@id="modal-container"]/ngb-modal-window/div/div/app-delete-pack/div[3]/button[2]
