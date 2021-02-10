@@ -25,14 +25,14 @@ Ajouter des Articles dans Pack
     # [Arguments]    ${bouton toggle}
     Sleep    5s 
     Go to     https://recette.makeitpulse.com/tom-immo/articles/list
-    wait Until element is Enabled    //input[@class="checkbox-table ng-untouched ng-pristine ng-valid"]    timeout=30s
+    wait until element is enabled    //input[@class="checkbox-table ng-untouched ng-pristine ng-valid"]    timeout=30s
     Click Element    //input[@class="checkbox-table ng-untouched ng-pristine ng-valid"]
     Click Element    //input[@class="checkbox-table ng-untouched ng-pristine ng-valid"]
     Click Element    //input[@class="checkbox-table ng-untouched ng-pristine ng-valid"]
     Click Element    //input[@class="checkbox-table ng-untouched ng-pristine ng-valid"]
-    Click Element    //*[@id="header5ItemList"]/div[1]/div[2]/button[1]
+    Click Element    //svg
     Click Link    //a[@id="dropdown-packExistant"]
-    Click Link    xpath=(//a[@class="dropdown-item"])[26]
+    Click Link    xpath=(//a[@class="dropdown-item"])[27]
     Click Element    //button[@class="btn btn-red btn-ajouter"]
 
 Voir Détails Pack
